@@ -645,7 +645,7 @@
           "name" : "QueryDatabaseTable",
           "penaltyDuration" : "10 sec",
           "position" : {
-            "x" : -1416.0,
+            "x" : -1760.0,
             "y" : -800.0
           },
           "properties" : {
@@ -772,7 +772,7 @@
           "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "15 sec",
+          "schedulingPeriod" : "10 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.QueryDatabaseTable",
@@ -797,8 +797,8 @@
           "name" : "PutDatabaseRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -728.0,
-            "y" : -256.0
+            "x" : -496.0,
+            "y" : -112.0
           },
           "properties" : {
             "put-db-record-allow-multiple-statements" : "false",
@@ -975,8 +975,8 @@
           "name" : "LookupRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1640.0,
-            "y" : -528.0
+            "x" : -1224.0,
+            "y" : -624.0
           },
           "properties" : {
             "result-contents" : "insert-entire-record",
@@ -1074,8 +1074,8 @@
           "name" : "JoltTransformJSON",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1640.0,
-            "y" : -280.0
+            "x" : -1632.0,
+            "y" : -176.0
           },
           "properties" : {
             "jolt-spec" : "[\n  {\n    \"operation\": \"shift\",\n    \"spec\": {\n      \"*\": {\n        \"login\": \"[&1].login\",\n        \"@country_name.name\": \"[&1].country\"\n      }\n    }\n  }\n]\n",
